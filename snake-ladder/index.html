@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snake and Ladder - 2D Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Snake & Ladder</h1>
+        <div class="game-container">
+            <div id="board-container">
+                <canvas id="gameBoard" width="600" height="600"></canvas>
+            </div>
+            <div class="controls">
+                <div class="player-info">
+                    <div id="player1-status" class="status-card active">
+                        <h3>Player 1 (You)</h3>
+                        <p>Position: <span id="p1-pos">1</span></p>
+                    </div>
+                    <div id="player2-status" class="status-card">
+                        <h3>Player 2 (CPU)</h3>
+                        <p>Position: <span id="p2-pos">1</span></p>
+                    </div>
+                </div>
+                <div class="dice-section">
+                    <div id="dice" class="dice">?</div>
+                    <button id="rollBtn">Roll Dice</button>
+                    <p id="message">Player 1's turn</p>
+                </div>
+                <div class="game-log" id="gameLog">
+                    <p>Welcome to Snake & Ladder!</p>
+                </div>
+                <button id="resetBtn">Restart Game</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
